@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+ul#album-fotos{
+    width: 700px;
+    margin-left: 150px;
+    padding: 40px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+
+}
+ul#album-fotos li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px #ffffff;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);
+}
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background: url('../_imagens/Livro Jardins da Lua.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+ul#album-fotos li#foto02 {
+    background: url('../_imagens/O sol tambem e uma estrela.jpg')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto03 {
+    background: url('../_imagens/As Armas da Persuasão.jpg')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto04 {
+    background: url('../_imagens/A Batalha do Avaí.jpg')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto05 {
+    background: url('../_imagens/Box Percy Jackson e os Olimpianos_2GG.jpg')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto06 {
+    background: url('../_imagens/O Alquimista.jpg')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+table#tabelaspecs {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+
+}
+
+table#tabelaspecs td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+}
+
+table#tabelaspecs td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabelaspecs td.cd{
+    background-color: #cecece;
+}
+table#tabelaspecs caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+table#tabelaspecs1 {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+
+}
+
+table#tabelaspecs1 td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+
+
+
+}
+
+table#tabelaspecs1 td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabelaspecs1 td.cd{
+    background-color: #cecece;
+
+}
+table#tabelaspecs1  tr.direita{
+    width: 100%;
+}
+table#tabelaspecs1 caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 2%;
+}
+
+table#tabelaspecs2 {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+
+
+}
+
+table#tabelaspecs2 td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+
+
+}
+
+table#tabelaspecs2 td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+
+}
+
+table#tabelaspecs2 td.cd{
+    background-color: #cecece;
+    margin-left: 10px;
+}
+
+table#tabelaspecs2  tr.direita{
+
+}
+table#tabelaspecs2 caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 2%;
+}
+
+table#tabelaspecs3 {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+
+
+}
+
+table#tabelaspecs3 td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+
+
+}
+table#tabelaspecs3 td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabelaspecs3 td.cd{
+    background-color: #cecece;
+}
+table#tabelaspecs3 caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 2%
+}
+
+table#tabelaspecs4 {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+
+
+}
+
+table#tabelaspecs4 td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+
+
+}
+table#tabelaspecs4 td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabelaspecs4 td.cd{
+    background-color: #cecece;
+}
+table#tabelaspecs4 caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 2%
+}
+table#tabelaspecs5 {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+
+
+}
+
+table#tabelaspecs5 td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 13pt;
+    width: 500px;
+
+
+}
+table#tabelaspecs5 td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabelaspecs5 td.cd{
+    background-color: #cecece;
+}
+table#tabelaspecs5 caption{
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 2%
+}

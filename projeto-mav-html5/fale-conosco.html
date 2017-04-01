@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+<head>
+<meta charset="UTF-8"/>
+<title> Biblioteca </title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+</head>
+<script language="javascript"src="_javascript/funcoes.js"></script>
+<script>
+    function  calc_total() {
+        var qtd= parseInt( document.getElementById('cQtd').value);
+        tot=qtd*1500;
+        document.getElementById('cTot').value=tot;
+
+    }
+</script>
+<body>
+<div id="interface">
+<header id="cabecalho">
+    <hgroup>
+<h1> Amazon.com </h1>
+<h2> O melhor lugar para comprar seu livro </h2>
+</hgroup> 
+<img id="icone"src="_imagens/home.png"/>
+<nav id="menu">
+ <h1>Menu Principal</h1>
+ <ul type="disc"> 
+   <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato1.png')"><a href="index.html">Home</a></li>
+   <li onmouseover="mudaFoto('_imagens/autores.png')" onmouseout="mudaFoto('_imagens/contato1.png')"><a href="autores.html">Autores </a></li>
+   <li onmouseover="mudaFoto('_imagens/livro.png')"  onmouseout="mudaFoto('_imagens/contato1.png')"><a href="Livros.html"> Livros</a></li>
+   <li onmouseover="mudaFoto('_imagens/contato1.png')" onmouseout="mudaFoto('_imagens/contato1.png')"><a href="fale-conosco.html">Fale conosco </a></li>
+     <li onmouseover="mudaFoto('_imagens/conf.png')" onmouseout="mudaFoto('_imagens/contato1.png')"><a href="desenvolvedor.html">Desenvolvedor </a></li>
+  </ul>
+</nav>
+</header>
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3> Fale Conosno </h3>
+                    <h1>Formulario</h1>
+                    <h2>por Luiz Henrique</h2>
+                    <h3 class="direita">Atualizado em 30/Março/2017</h3>
+                </hgroup>
+            </header>
+
+
+<form method="post" id="fContato" action="mailto:luizinfo.henrique9@gmail.com" oninput="calc_total();">
+    <fieldset id="usuario"> <legend>Identificação do Usuário</legend>
+    <p id="pag"><label for="cNome">  Nome: </label><input type="text"name="tNome" id="cNome"size="20" maxlength="30" placeholder="Nome Completo"/></p>
+    <p id="pag1"><label for="cSenha"> Senha: </label><input type="password"name="tSenha"id="cSenha"size="8"maxlength="8" placeholder="8 digistos"/></p>
+    <p id="pag2"><label>E-mail:</label><input type="email"name="tMail"id="cMail"size="20"maxlength="40"/></p>
+    <fieldset id="sexo"><legend> Sexo </legend>
+        <input type="radio"name="tSexo"id="cMasc" checked/><label for="cMasc">Masculino</label></br>
+        <input type="radio" name="tSexo"id="cFem"/><label for="cFem">Feminino</label>
+    </fieldset>
+        <p><label for="cNasc"> Data de Nascimento:</label><input type="date"name="tNasc"id="cNasc"></p>
+</fieldset>
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p id="pag3">Logradouro:<input type="text"name="tRua"id="cRua" size="13" maxlength="80" placeholder="Rua , Av, Trav,...."/></p>
+    <p id="pag4">Número:<input type="number" name="tNum"id="cNum" min="0" max="99999"/></p>
+    <p id="pag5"><label for="cEst">Estado:</label>
+    <select name="tEst" id="cEst"/></p>
+        <optgroup label="Região Sudeste"><option value="RJ"> Rio de Janeiro </option>
+        <option value="SP" selected> São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        </optgroup>
+        <optgroup label="Região Sul"><option value="PR">Paraná</option>
+        <option value="SC"> Santa Catarina</option>
+        <option value="RS"> Rio Grande do Sul</option>
+        </optgroup>
+    </select>
+    <p id="pag6"><label for="cCid">Cidade:</label>
+    <input type="text" name="tCid" id="cCid" maxlength="40" size="20"placeholder="Sua Cidade"list="cidades"/></p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
+    </fieldset>
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p id="pag7"><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg"id="cMsg"cols="38"rows="5"placeholder="Deixe aqui sua mensagem"></textarea></p>
+</fieldset>
+    <input type="image" src="_imagens/botao-enviar.png">
+</form>
+</article>
+    </section>
+<footer id="rodape">
+<p>Copyright &copy; 2017 - by Luiz Henrique <br/>
+<a href="https://www.facebook.com/Amazon/" target="_blank"> Facebook | </a>
+<a href= "https://twitter.com/amazon"   target="_blank"> Twitter </a></p>
+</footer>
+</div>
+</body>
+</html>

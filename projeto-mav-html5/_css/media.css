@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+
+table#tabela {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13pt;
+    font-weight: auto;
+    width: 500px;
+    float: left;
+
+}
+
+table#tabela td {
+    border: 1px solid #606060;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 13pt;
+}
+
+table#tabela td.ce{
+    background-color: #cecece;
+    font-weight: bold;
+}
+
+table#tabela td.cd{
+    background-color: #cecece;
+}
+
+img#float {
+    float: left;
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 400px;
+    height: 389px;
+
+}
